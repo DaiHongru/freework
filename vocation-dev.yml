@@ -1,0 +1,46 @@
+##################### spring配置 port:9091 #####################
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 101.132.152.64
+    port: 5672
+#   zipkin:
+#       base-url: http://101.132.152.64:9411
+#   sleuth:
+#     sampler:
+#       percentage: 1
+##################### JDBC连接配置 #####################
+jdbc:
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/freework?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+  username: WnplV/ietfQ=
+  password: QAHlVoUc49w=
+c3p0:
+  maxPoolSize: 100
+  minPoolSize: 10
+  maxIdleTime: 1800
+  acquireRetryAttempts: 2
+  initialPoolSize: 10
+  autoCommitOnClose: false
+  checkoutTimeout: 10000
+##################### MyBatis配置 #####################
+mybatis: 
+  config_file: mybatis-config.xml
+  mapper_path: /mapper/**.xml
+  type_alias_package: com.freework.vocation.entity
+##################### Pagehelper配置#####################
+pagehelper:
+  helperDialect: mysql
+  reasonable: false
+  supportMethodsArguments: true
+  params: count=countSql
+##################### Redis配置 #####################
+redis:
+  hostname: 127.0.0.1
+  port: 6379
+  pool:
+    maxActive: 100
+    maxIdle: 20
+    maxWait: 3000
+    testOnBorrow: true

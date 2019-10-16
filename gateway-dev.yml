@@ -1,0 +1,15 @@
+##################### spring配置 port:9090 #####################
+spring: 
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 101.132.152.64
+    port: 5672
+##################### zuul配置 #####################
+# zuul:
+#   routes:
+#     myVocation:
+#       path: /myVocation/**
+#       serviceId: vocation
+#       sensitiveHeaders:
+#   ignored-patterns:
