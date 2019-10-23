@@ -5,11 +5,6 @@ spring:
     password: guest
     host: 101.132.152.64
     port: 5672
-#   zipkin:
-#       base-url: http://101.132.152.64:9411
-#   sleuth:
-#     sampler:
-#       percentage: 1
 ##################### JDBC连接配置 #####################
 jdbc:
   driver: com.mysql.cj.jdbc.Driver
@@ -20,7 +15,7 @@ c3p0:
   maxPoolSize: 100
   minPoolSize: 10
   maxIdleTime: 1800
-  acquireRetryAttempts: 3
+  acquireRetryAttempts: 2
   initialPoolSize: 10
   autoCommitOnClose: false
   checkoutTimeout: 10000
