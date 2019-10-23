@@ -13,3 +13,4 @@ spring:
 #       serviceId: vocation
 #       sensitiveHeaders:
 #   ignored-patterns:
+#
