@@ -1,0 +1,4 @@
+jdbc:
+  url: jdbc:mysql://101.132.152.64:3306/freework?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+redis:
+  hostname: 101.132.152.64
