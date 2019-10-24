@@ -1,0 +1,52 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-request-size: 10MB
+      max-file-size: 10MB
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 101.132.152.64
+    port: 5672
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+##################### JDBC连接配置 #####################
+jdbc:
+  driver: com.mysql.cj.jdbc.Driver
+  username: WnplV/ietfQ=
+  password: QAHlVoUc49w=
+c3p0:
+  maxPoolSize: 100
+  minPoolSize: 10
+  maxIdleTime: 1800
+  acquireRetryAttempts: 2
+  initialPoolSize: 10
+  autoCommitOnClose: false
+  checkoutTimeout: 10000
+##################### MyBatis配置 #####################
+mybatis:
+  config_file: mybatis-config.xml
+  mapper_path: /mapper/**.xml
+  type_alias_package: com.freework.enterprise.entity
+##################### Pagehelper配置#####################
+pagehelper:
+  helperDialect: mysql
+  reasonable: false
+  supportMethodsArguments: true
+  params: count=countSql
+##################### Redis配置 #####################
+redis:
+  port: 6379
+  pool:
+    maxActive: 100
+    maxIdle: 20
+    maxWait: 3000
+    testOnBorrow: true
+##################### hystrix配置 #####################
+feign:
+  hystrix:
+    enabled: true
