@@ -24,7 +24,8 @@ pagehelper:
   params: count=countSql
 ##################### Redis配置 #####################
 redis:
-  port: 6379
+  port: 6111
+  password: freework@2020freework@2020freework@2020
   pool:
     maxActive: 100
     maxIdle: 20
