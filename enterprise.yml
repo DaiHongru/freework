@@ -6,8 +6,8 @@ spring:
       max-request-size: 10MB
       max-file-size: 10MB
   rabbitmq:
-    username: guest
-    password: freework
+    username: /v858kv/IHI=
+    password: Bw2LZNuneVQfJAfVsP+M2w==
     host: 101.132.152.64
     port: 5672
     publisher-confirms: true
@@ -41,7 +41,7 @@ pagehelper:
 ##################### Redis配置 #####################
 redis:
   port: 6111
-  password: freework@2020freework@2020freework@2020
+  password: Bw2LZNuneVTv03qi4qCsHSiH5o2MY9CzlGPLECRU7tBQS+M+qARYEQ==
   pool:
     maxActive: 100
     maxIdle: 20
