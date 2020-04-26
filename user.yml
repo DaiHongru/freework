@@ -18,7 +18,7 @@ spring:
 jdbc:
   driver: com.mysql.cj.jdbc.Driver
   username: WnplV/ietfQ=
-  password: QAHlVoUc49w=
+  password: Bw2LZNuneVQfJAfVsP+M2w==
 c3p0:
   maxPoolSize: 100
   minPoolSize: 10
