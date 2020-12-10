@@ -1,2 +1,2 @@
-# freework
-Design and implementation of FreeWork recruitment platform based on microservice architecture
+# FreeWork
+基于微服务架构(SpringCloud)的招聘平台的设计与实现
